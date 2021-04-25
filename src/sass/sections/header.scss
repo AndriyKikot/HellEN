@@ -1,7 +1,7 @@
 .navigation {
   @include flexible(space-between);
   align-items: baseline;
-  margin-bottom: 58px;  
+  margin-bottom: 58px;
 }
 
 #menu__toggle {
@@ -111,13 +111,12 @@
       text-transform: uppercase;
 
       &:hover {
-        border-color:$accent-color;
-        color:$accent-color;
+        border-color: $accent-color;
+        color: $accent-color;
       }
     }
   }
 }
-
 
 .header {
   background-image: url(../../images/mobile/header/m-header-background.jpg);
@@ -148,7 +147,7 @@
     color: $dark-color-second;
     letter-spacing: 0.05em;
 
-    &--margbot1{
+    &--margbot1 {
       margin-bottom: 6px;
     }
 
@@ -162,7 +161,7 @@
     }
 
     &--orange {
-      color:$accent-color;
+      color: $accent-color;
     }
   }
 
@@ -173,14 +172,6 @@
       @include flexible(space-between);
       align-items: center;
       width: 190px;
-
-      &:hover .header__list-icon{
-        animation: pulsate-bck 1s ease-in-out infinite both;
-        fill: $green-color;
-      }
-      &:hover .header__list-icon-wrapper{
-        border-color: $green-color;
-      }
     }
 
     &-icon {
@@ -224,17 +215,9 @@
   display: flex;
   flex-direction: column;
 
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-
-  &:hover{
-    animation: heartbeat 1.5s ease-in-out infinite both;
-  }
-
   &__icon {
     fill: $accent-color;
     @include icon-size(15px, 15px);
-
-    animation: color-change-2x 1s linear infinite alternate both;
 
     &-wrapper {
       display: flex;
@@ -263,8 +246,7 @@
 /* MOBILE @MEDIA */
 
 @media (max-width: 767px) {
-
-  .navigation__menu-wrapper{
+  .navigation__menu-wrapper {
     display: none;
   }
 
@@ -277,9 +259,9 @@
   .logo-for-burger {
     top: 26px;
   }
-  
+
   .header {
-    &-wrapper{
+    &-wrapper {
       flex-direction: column;
       align-items: center;
     }
@@ -297,13 +279,13 @@
       }
     }
   }
-  .modal-btn--center{
+  .modal-btn--center {
     text-align: center;
   }
 }
 
-@media (max-width: 1279px){
-  .under-mobile{
+@media (max-width: 1279px) {
+  .under-mobile {
     display: block;
   }
 }
@@ -311,46 +293,39 @@
 /* TABLET @MEDIA */
 
 @media (min-width: 768px) {
-
-  .navigation{
-
-    &__menu{
+  .navigation {
+    &__menu {
       display: none;
 
-      &-btn{
+      &-btn {
         border: solid 2px $accent-color;
         background: transparent;
         @include icon-size(247px, 45px);
         @include font(11px, bold, 1.2, $second-font);
-        color:$accent-color;
+        color: $accent-color;
         text-transform: uppercase;
         cursor: pointer;
         margin-left: 206px;
-
-        &:hover {
-          animation: jello-horizontal 0.9s both;
-          border-color: $green-color;
-        }
       }
 
-      &-wrapper{
-        display: flex;       
+      &-wrapper {
+        display: flex;
       }
     }
   }
 
-  .logo{
-    &__text{
+  .logo {
+    &__text {
       font-size: 25px;
     }
-    &__icon{
+    &__icon {
       @include icon-size(25px, 25px);
     }
-    &__description{
-      font-size: 8.75px;          
+    &__description {
+      font-size: 8.75px;
     }
   }
-  
+
   .burger {
     &__menu {
       padding-left: 200px;
@@ -372,7 +347,7 @@
   .header {
     padding-top: 37px;
     background-image: url(../../images/tablet/header/t-header-background.jpg);
-    
+
     @media (min-resolution: 192dpi) {
       background-image: url(../../images/tablet/header/t-header-background@2x.jpg);
     }
@@ -382,9 +357,9 @@
       margin-bottom: 117px;
     }
 
-    &__picture-wrapper{
+    &__picture-wrapper {
       width: 370px;
-      &-img{
+      &-img {
         max-width: 100%;
       }
     }
@@ -412,36 +387,34 @@
 
 /* DESKTOP @MEDIA */
 
-@media (min-width: 1280px){
-
-  .burger{
+@media (min-width: 1280px) {
+  .burger {
     display: none;
   }
-  
-  .navigation{
-    &__menu{
+
+  .navigation {
+    &__menu {
       @include flexible(space-between);
       width: 570px;
 
-      &-wrapper{
+      &-wrapper {
         align-items: baseline;
       }
 
-      &-item{
-
+      &-item {
         &:hover .navigation__menu-link {
           color: $accent-color;
         }
       }
 
-      &-link{
+      &-link {
         @include font(12px, bold, 1.2, $second-font);
         color: $grey-first;
         text-transform: uppercase;
         letter-spacing: 0.1em;
       }
 
-      &-btn{
+      &-btn {
         margin-left: 44px;
       }
     }
@@ -449,7 +422,7 @@
   .header {
     padding-bottom: 86px;
     background-image: url(../../images/desktop/header/d-header-background.jpg);
-     
+
     @media (min-resolution: 192dpi) {
       background-image: url(../../images/desktop/header/d-header-background@2x.jpg);
     }
@@ -457,12 +430,12 @@
     &-wrapper {
       margin-bottom: 129px;
     }
-    
-    &__picture-wrapper{
+
+    &__picture-wrapper {
       width: 685px;
     }
 
-    &__titel {      
+    &__titel {
       font-size: 48px;
       line-height: 1.208;
       margin-bottom: 35px;
@@ -470,10 +443,10 @@
 
     &__description {
       font-size: 18px;
-      
+
       &--margbot2 {
         margin-bottom: 67px;
-        }
+      }
     }
 
     &__list {
@@ -482,11 +455,11 @@
       &-item {
         width: 380px;
       }
-        
+
       &-icon {
         @include icon-size(45px, 45px);
         transform: translateY(60%);
-  
+
         &-wrapper {
           @include icon-size(103px, 103px);
         }
@@ -498,32 +471,30 @@
       }
 
       &-text {
-        @include font-and-width (18px , 275px);
+        @include font-and-width(18px, 275px);
         transform: translate(-21px, 0px);
-
       }
     }
   }
 }
 
-
 /* DESKTOP XL @MEDIA */
 
-@media (min-width: 1680px){
+@media (min-width: 1680px) {
   .header {
     padding-top: 28px;
     padding-bottom: 127px;
     background-image: url(../../images/desktop-xl/header/d-header-background.png);
-     
+
     @media (min-resolution: 192dpi) {
       background-image: url(../../images/desktop-xl/header/d-header-background@2x.png);
     }
 
-    &__picture-wrapper{
+    &__picture-wrapper {
       width: 610px;
     }
 
-    &__titel {      
+    &__titel {
       font-size: 58.333px;
       line-height: 1.3;
       margin-bottom: 35px;
@@ -531,31 +502,31 @@
 
     &__description {
       font-size: 21px;
-      
+
       &--margbot2 {
         margin-bottom: 46px;
-        }
+      }
     }
-    &__list{
-      &-item{
+    &__list {
+      &-item {
         width: 430px;
       }
 
-      &-text{
-        @include font-and-width (21px , 340px);
+      &-text {
+        @include font-and-width(21px, 340px);
         transform: translate(-18px, 0px);
       }
     }
   }
-  .navigation{
-    &__menu{
+  .navigation {
+    &__menu {
       width: 675px;
 
-      &-link{
+      &-link {
         font-size: 14px;
       }
 
-      &-btn{
+      &-btn {
         margin-left: 57px;
       }
     }
