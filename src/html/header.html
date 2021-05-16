@@ -1,119 +1,123 @@
-<div id="header" class="header">
+<header class="header" id="header">
+  <nav class="navigation container">
+    //= ./logo.html
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="#program" class="menu__link">
+          <span class="menu__link-text">Программа обучения</span></a>
+      </li>
+      <li class="menu__item">
+        <a href="#teacher" class="menu__link"><span class="menu__link-text">О нас</span></a>
+      </li>
+      <li class="menu__item">
+        <a href="#about" class="menu__link"><span class="menu__link-text">Варианты обучения</span></a>
+      </li>
+      <li class="menu__item">
+        <a href="#registration" class="menu__link"><span class="menu__link-text">Контакты</span></a>
+      </li>
+    </ul>
+    <a href="#registration" class="header__btn btn">Консультация по телефону</a>
+
+    <div class="burger">
+      <div class="burger__wrap container">
+        //= ./logo.html
+        <ul class="menu menu--burger">
+          <li class="menu__item">
+            <a href="#program" class="menu__link">Программа обучения</a>
+          </li>
+          <li class="menu__item">
+            <a href="#teacher" class="menu__link">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="#about" class="menu__link">Варианты обучения</a>
+          </li>
+          <li class="menu__item">
+            <a href="#registration" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+        <a href="#registration" class="burger__btn btn">Консультация по телефону</a>
+      </div>
+    </div>
+
+    <div class="burger--btn">
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
-    <div class="navigation">
-      <div class="logo-wrapper">
-        <a href="#" class="logo">
-          <div class="logo__icon-wrapper">
-            <span class="logo__text">Hell</span>
-            <svg class="logo__icon">
-              <use href="./images/icons/sprite.svg#campfire"></use>
-            </svg>
-            <span class="logo__text">EN</span>
-          </div>
-          <span class="logo__description"><span class="logo__description--orange">адский</span>
-            английский</span>
+    <div class="hero">
+      <div class="hero__offer">
+        <h1 class="hero__title">
+          Комплексная <span class="hero__title-span">подготовка к ВНО</span> по
+          английскому языку
+        </h1>
+        <p class="hero__text">Просто не будет.</p>
+        <p class="hero__subtitle">
+          Но ты гарантировано наберешь
+          <span class="orange-font">+25 баллов</span>
+        </p>
+        <a href="#registration" class="hero__btn btn">
+          Консультация по телефону
         </a>
       </div>
-      <div class="navigation__menu-wrapper">
-        <ul class="navigation__menu">
-          <li class="navigation__menu-item"><a href="#prog" class="navigation__menu-link">программа обучения</a></li>
-          <li class="navigation__menu-item"><a href="#about-us" class="navigation__menu-link">о нас</a></li>
-          <li class="navigation__menu-item"><a href="#options" class="navigation__menu-link">варианты обучения</a></li>
-          <li class="navigation__menu-item"><a href="#contacts" class="navigation__menu-link">контакты</a></li>
-        </ul>
-        <button class="navigation__menu-btn" onclick="location.href='#reg'">консультация по телефону</button>
-      </div>
-      <div class="burger">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <div class="burg"></div>
-        </label>
-        <div class="burger__menu-wrapper">
-          <div class="container">
-            <div class="logo-for-burger">
-              <div class="logo-wrapper">
-                <a href="#" class="logo">
-                  <div class="logo__icon-wrapper">
-                    <span class="logo__text">Hell</span>
-                    <svg class="logo__icon">
-                      <use href="./images/icons/sprite.svg#campfire"></use>
-                    </svg>
-                    <span class="logo__text">EN</span>
-                  </div>
-                  <span class="logo__description"><span class="logo__description--orange">адский</span>
-                    английский</span>
-                </a>
-              </div>
-            </div>
-            <ul class="burger__menu">
-              <li class="burger__menu-item"><a class="burger__menu-link" href="#prog">Программа обучения</a>
-              </li>
-              <li class="burger__menu-item"><a class="burger__menu-link" href="#about-us">О нас</a></li>
-              <li class="burger__menu-item"><a class="burger__menu-link" href="#options">Варианты обучения</a>
-              </li>
-              <li class="burger__menu-item"><a class="burger__menu-link" href="#contacts">Контакты</a></li>
-            </ul>
-            <button class="burger__menu-btn" onclick="location.href='#reg'">консультация по телефону</button>
-          </div>
-        </div>
-      </div>
+      <picture class="hero__img">
+        <source media="(min-width: 1680px)" srcset="
+            ./images/header/header-img/header-xd-img.png       839w,
+            ./images/header/header-img/header-xd-img@1.5x.png 1258w,
+            ./images/header/header-img/header-xd-img@2x.png   1677w
+          " sizes="839px" />
+        <source media="(min-width: 1280px)" srcset="
+            ./images/header/header-img/header-d-img.png       685w,
+            ./images/header/header-img/header-d-img@1.5x.png 1027w,
+            ./images/header/header-img/header-d-img@2x.png   1369w
+          " sizes="685px" />
+        <source media="(min-width: 576px)" srcset="
+            ./images/header/header-img/header-t-img.png      370w,
+            ./images/header/header-img/header-t-img@1.5x.png 554w,
+            ./images/header/header-img/header-t-img@2x.png   739w
+          " sizes="370px" />
+        <source media="(min-width: 320px)" srcset="
+            ./images/header/header-img/header-m-img.png      215w,
+            ./images/header/header-img/header-m-img@1.5x.png 322w,
+            ./images/header/header-img/header-m-img@2x.png   430w
+          " sizes="215px" />
+        <img src="./images/header/header-img/header-m-img.png" alt="Подготовка к ВНО" />
+      </picture>
     </div>
-    <div class="header-wrapper">
-      <div class="header__titel-wrapper">
-        <h1 class="header__titel">Комплексная
-          <span class="under">подготовка к ВНО</span>
-          <span class="under">по английскому <span class="under-tablet">языку</span></span>
-        </h1>
-        <p class="header__description header__description--margbot1 header__description--grey">Просто не будет.</p>
-        <p class="header__description header__description--margbot2">Но ты гарантировано наберешь <span
-            class="under-mobile header__description--orange">+25
-            баллов</span></p>
-        <div class="modal-btn--center"><button class="modal-btn" onclick="location.href='#reg'">Хочу на бесплатное
-            занятие</button></div>
-      </div>
-      <div class="header__picture-wrapper">
-        <picture class="header__picture">
-          <source media="(max-width: 767px)"
-            srcset="./images/mobile/header/m-header-picture.png 380w, ./images/mobile/header/m-header-picture@2x.png 760w">
-          <source media="(min-width: 768px)"
-            srcset="./images/tablet/header/t-header-picture.png 380w, ./images/tablet/header/t-header-picture@2x.png 760w">
-          <source media="(min-width: 1280px)"
-            srcset="./images/desktop/header/d-header-picture 380w, ./images/desktop/header/d-header-picture@2x.png 760w">
-          <source media="(min-width: 1680px)"
-            srcset="./images/desktop-xl/header/d-header-picture 380w, ./images/desktop-xl/header/d-header-picture@2x.png 760w">
-          <img class="header__picture-wrapper-img" src="./images/mobile/header/m-header-picture.png 380w"
-            alt="header__picture">
-        </picture>
-      </div>
-    </div>
-    <ul class="header__list">
-      <li class="header__list-item">
-        <div class="header__list-icon-wrapper">
-          <svg class="header__list-icon">
-            <use href="./images/icons/sprite.svg#female-student"></use>
+
+    <ul class="benefit">
+      <li class="benefit__item">
+        <div class="benefit__img-wrap">
+          <svg class="benefit__img">
+            <use href="./images/icon/sprite.svg#female_student"></use>
           </svg>
         </div>
-        <div class="header__list-absolute"></div>
-        <p class="header__list-text">Адаптированная авторская программа ВНО</p>
+        <h3 class="benefit__title">
+          Адаптированная авторская программа ВНО
+        </h3>
       </li>
-      <li class="header__list-item">
-        <div class="header__list-icon-wrapper">
-          <svg class="header__list-icon">
-            <use href="./images/icons/sprite.svg#mobile-learning"></use>
+      <li class="benefit__item">
+        <div class="benefit__img-wrap">
+          <svg class="benefit__img">
+            <use href="./images/icon/sprite.svg#mobile_learning"></use>
           </svg>
         </div>
-        <div class="header__list-absolute"></div>
-        <p class="header__list-text">Современные методики обучения</p>
+        <h3 class="benefit__title">
+          Современные методики обучения
+        </h3>
       </li>
-      <li class="header__list-item">
-        <div class="header__list-icon-wrapper">
-          <svg class="header__list-icon">
-            <use href="./images/icons/sprite.svg#insurance"></use>
+      <li class="benefit__item">
+        <div class="benefit__img-wrap">
+          <svg class="benefit__img">
+            <use href="./images/icon/sprite.svg#noun_insurance"></use>
           </svg>
         </div>
-        <div class="header__list-absolute"></div>
-        <p class="header__list-text">Финансовая гарантия результата</p>
+        <h3 class="benefit__title">
+          Финансовая гарантия результата
+        </h3>
       </li>
     </ul>
   </div>
-</div>
+</header>
