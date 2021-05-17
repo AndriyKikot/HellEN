@@ -43,10 +43,6 @@
     text-align: center;
     transition: transform 0.2s linear, background 0.3s linear;
 
-    &:hover {
-      transform: scale(1.05);
-    }
-
     &:hover .about-list__img {
       fill: $white-color;
     }

@@ -23,6 +23,13 @@
     &__container {
       margin-bottom: rem(52);
     }
+
+    &__img {
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s linear;
+      }
+    }
   }
 
   &__list {
@@ -61,12 +68,14 @@
     letter-spacing: 0.05em;
     color: $black-color-s;
 
-    // &--pseudo::before {
-    //   display: inline-block;
-    //   @include pseudo(rem(32), rem(31));
-    //   background-image: url('../../images/footer/call.svg');
-    //   @include background-settings(no-repeat);
-    // }
+    &:hover .footer-svg {
+      transform: scale(1.1);
+      transition: transform 0.2s linear;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     @include for-size(mobile) {
       &:not(:last-of-type) {

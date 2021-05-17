@@ -8,6 +8,12 @@
   font-weight: 700;
   position: relative;
 
+  &:hover .logo__icon {
+    transform: scale(1.2);
+    fill: rgba(255, 0, 0, 0.8);
+    transition: transform 0.2s linear, fill 0.2s linear;
+  }
+
   &__icon {
     display: block;
     fill: $orange-color;
