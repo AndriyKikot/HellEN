@@ -67,6 +67,7 @@
     line-height: rem(38);
     letter-spacing: 0.05em;
     color: $black-color-s;
+    text-decoration: underline;
 
     &:hover .footer-svg {
       transform: scale(1.1);
@@ -74,7 +75,7 @@
     }
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     @include for-size(mobile) {

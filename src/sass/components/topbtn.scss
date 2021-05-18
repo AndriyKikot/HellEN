@@ -27,6 +27,6 @@
 }
 
 .to-header-btn__img:hover {
-  fill: darken($orange-color, 10%);
+  fill: rgba(255, 0, 0, 0.8);
   transition: fill 0.2s linear;
 }

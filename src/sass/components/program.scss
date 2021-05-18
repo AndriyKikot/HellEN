@@ -145,6 +145,11 @@ h4 {
 }
 
 .program__sub-item {
+  &:hover .program__sub-sub-list > .grey-font {
+    color: $white-color;
+    transition: color 0.2s linear;
+  }
+
   &:not(:last-child) {
     margin-bottom: 25px;
   }
